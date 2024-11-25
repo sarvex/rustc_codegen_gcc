@@ -37,7 +37,7 @@ jobs:
       run: sudo apt-get install ninja-build ripgrep
 
     - name: Download artifact
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v6
       with:
           workflow: main.yml
           name: ${{ matrix.libgccjit_version.gcc }}
