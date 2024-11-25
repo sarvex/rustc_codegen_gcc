@@ -51,7 +51,7 @@ jobs:
           sudo ln -s /usr/share/intel-sde/sde64 /usr/bin/sde64
 
     - name: Download artifact
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v6
       with:
           workflow: main.yml
           name: ${{ matrix.libgccjit_version.gcc }}
